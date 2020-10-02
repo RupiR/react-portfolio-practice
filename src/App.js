@@ -1,5 +1,8 @@
 import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 import './App.css';
+import { Navbar } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -40,7 +43,17 @@ class App extends React.Component {
 
   render(){
     return (
-    <div>Hello from React</div>
+    <Router>
+      <Container className="p=0" fluid={true}>
+      
+      <Navbar className="border-bottom">
+        <Navbar.Brand>
+        Rupi Rajput
+        </Navbar.Brand>
+    
+      </Navbar>
+      </Container>
+    </Router>
     );
 }
 }
