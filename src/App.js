@@ -47,11 +47,11 @@ class App extends React.Component {
     <Router>
       <Container className="p=0" fluid={true}>
       
-      <Navbar className="border-bottom" bg="transparent">
+      <Navbar className="border-bottom" bg="transparent" expand="lg">
 
         <Navbar.Brand>Rupi Rajput</Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-toggle"/>
+        <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
         <Navbar.Collapse id="navbar-toggle">
           <Nav className="ml-auto">
             <Link className="nav-link" to="/">Home</Link>
