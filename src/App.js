@@ -7,6 +7,7 @@ import './App.css';
 
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
 class App extends React.Component {
 
@@ -66,10 +67,10 @@ class App extends React.Component {
         </Navbar.Collapse>
       </Navbar>
       <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
-      {/* <Route path="/about" exact render={} />
-      <Route path="/languages" exact render={} />
-      <Route path="/portfolio" exact render={} />
-      <Route path="/contact" exact render={} /> */}
+      <Route path="/about" exact render={() => <Aboutage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
+      <Route path="/languages" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+      <Route path="/portfolio" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+      <Route path="/contact" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
       <Footer />
 
       </Container>
