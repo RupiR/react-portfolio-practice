@@ -8,6 +8,9 @@ import './App.css';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import LanguagesPage from './pages/LanguagesPage';
+import PortfolioPage from './pages/PortfolioPage';
+import ContactPage from './pages/ContactPage';
 
 class App extends React.Component {
 
@@ -67,10 +70,10 @@ class App extends React.Component {
         </Navbar.Collapse>
       </Navbar>
       <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
-      <Route path="/about" exact render={() => <Aboutage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>} />
-      <Route path="/languages" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
-      <Route path="/portfolio" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
-      <Route path="/contact" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+      <Route path="/about" render={() => <AboutPage title={this.state.about.title}/>} />
+      <Route path="/languages" render={() => <LanguagesPage title={this.state.languages.title}/>} />
+      <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title}/>} />
+      <Route path="/contact" render={() => <ContactPage title={this.state.contact.title}/>} />
       <Footer />
 
       </Container>
