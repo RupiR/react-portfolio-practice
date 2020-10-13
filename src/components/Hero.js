@@ -1,10 +1,18 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Container } from 'react-bootstrap';
 
 function Hero() {
 
 return(
-    <Jumbotron></Jumbotron>
+    <Jumbotron>
+        <Container>
+            <Row>
+                
+            </Row>
+
+
+        </Container>
+    </Jumbotron>
 );
 
 }
